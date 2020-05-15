@@ -1,0 +1,68 @@
+\documentclass[10pt]{beamer}
+
+\usetheme{metropolis}
+\definecolor{FG}{HTML}{00204E}
+\definecolor{TT}{HTML}{444444}
+
+\usepackage[utf8]{inputenc}
+\usepackage{appendixnumberbeamer}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepgfplotslibrary{dateplot}
+\usepackage{natbib}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\setbeamercolor{frametitle}{bg=FG}
+\setbeamercolor{alerted text}{fg=FG}
+\setbeamercolor{normal text}{fg=TT,bg=white}
+
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
+\title{My Slides}
+\subtitle{Some recent work}
+\date{\today}
+\author{Author}
+\institute{Institute}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}[fragile]{Table of Contents}
+    \tableofcontents
+\end{frame}
+
+\section{Background}
+
+\begin{frame}[fragile]{Background}
+    Hello!
+    \blfootnote{\citep{schmidhuber}}
+\end{frame}
+
+\begin{frame}[fragile]{Recap}
+
+Today we discussed:
+
+\begin{itemize}
+    \item blah blah blah
+\end{itemize}
+
+Thank you. Any questions?\\~\\
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+  \bibliography{refs}
+  \bibliographystyle{apalike}
+\end{frame}
+
+\end{document}
+
